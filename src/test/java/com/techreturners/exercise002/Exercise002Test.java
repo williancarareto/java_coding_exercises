@@ -1,5 +1,5 @@
 package com.techreturners.exercise002;
-
+import org.junit.Ignore;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
@@ -7,6 +7,7 @@ import org.junit.Test;
 public class Exercise002Test {
 
     @Test
+    @Ignore
     public void checkIsFromManchester() {
         Exercise002 ex002 = new Exercise002();
 
@@ -18,6 +19,7 @@ public class Exercise002Test {
     }
 
     @Test
+    @Ignore
     public void checkCanWatchFilm() {
         Exercise002 ex002 = new Exercise002();
 
