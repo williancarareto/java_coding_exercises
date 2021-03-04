@@ -20,22 +20,19 @@ public class Exercise001 {
 
     public double addVat(double originalPrice, double vatRate) {
         // Add your code here
-        double price = 0;
-        
-        price = originalPrice + (originalPrice * (vatRate/100));
-        return price;
+                
+        DecimalFormat df = new DecimalFormat("0.00");
+        double vatAddedPrice = Double.valueOf(df.format(originalPrice + (originalPrice * (vatRate / 100))));
+		return vatAddedPrice;
     }
 
     public String reverse(String sentence) {
         // Add your code here
 
-        
-
-       
         return sentence;
     }
 
-    public int countLinuxUsers(List<User> users) {
+    public int countLinuxUsers(List<User> users) { 
         // Add your code here
         List<User> linuxUsers = new ArrayList<User>();
 			for (User u : users) {
